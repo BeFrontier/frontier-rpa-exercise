@@ -1,12 +1,12 @@
 # Frontier RPA Exercise
 At Frontier, we aim to help our customers find and hire more candidates by improving their hiring funnel. One large part of this funnel is programatic application submission into customer's ATS.
 
-## About the exercise
+## About the Exercise
 We would like you to build a REST API endpoint which will submit candidate's details provided in the request to our test [form](https://frontier.jobs/jobs/190562). 
 
 For example, a request bellow should submit candidate's details to our application form and return success/error status to API user.
 ```
-POST /form/frontier
+POST /forms/frontier/applications
 {
   "firstname": "Test",
   "lastname": "Lastname",
@@ -17,14 +17,14 @@ POST /form/frontier
 }
 ```
 
-For this short exercise you can assume that resume details are provided as a link to publicly available file - feel free to use Resume specified in example above.
+For this short exercise you can assume that resume details are provided as a link to a publicly available file - feel free to use the Resume specified in the example above.
 
 #### Engineering
 - Please use Typescript and Node.js to the best of your ability.
 - Please use [Puppeteer](https://pptr.dev/) for Robot Process Automation
 - Please pay attention to the code structure, naming conventions and clear setup instructions
 - Try to structure your code so it can be unit tested. Bonus points if you also write a simple unit test for one of your components.
-- This exercise assumes synchronous behaviour (1. request to endpoint 2. submit candidate to Frontier form using Puppeteer 3. response to API user). In many cases, the execution time of second could be quite long. Consequently, asynchronous endpoint could be a better solution. For bonus points, describe how would you design/implement asynchronous endpoint (if you enjoy the exercise, fell free to implement the solution :smiley:).
+- This exercise assumes synchronous behaviour (1. request to endpoint 2. submit candidate to Frontier form using Puppeteer 3. response to API user). In many cases, the execution time of the second could be quite long. Consequently, an asynchronous endpoint could be a better solution. For bonus points, describe how you would design/implement an asynchronous endpoint. (If you enjoy the exercise, feel free to implement the solution. :smiley:)
 
 
 When you send your solution back to us, please include your thoughts on the exercise and how long you spent on it so we can adjust our expectations.
