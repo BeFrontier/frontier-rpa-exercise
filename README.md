@@ -1,36 +1,6 @@
-# Frontier RPA Exercise
-At Frontier, we aim to help our customers find and hire more candidates by improving their hiring funnel. One large part of this funnel is programatic application submission into customer's ATS.
-
-## About the Exercise
-We would like you to build a REST API endpoint which will submit candidate's details provided in the request to our test [form](https://frontier.jobs/jobs/190562). 
-
-For example, a request bellow should submit candidate's details to our application form and return success/error status to API user.
-```
-POST /forms/frontier/applications
-{
-  "firstname": "Test",
-  "lastname": "Lastname",
-  "phone": "+1 234 234 0000",
-  "location": "London, UK",
-  "linkedin": "linkedin.com/profile/me" 
-  "resume": "https://frontier-public-assets.s3-us-west-2.amazonaws.com/05oo7evmr4hsc7ufvmdcpojlh1ki1rd3benjo0g1_Brian_CV.docx"  # link to publicliy available Resume
-}
-```
-
-For this short exercise you can assume that resume details are provided as a link to a publicly available file - feel free to use the Resume specified in the example above.
-
-#### Engineering
-- Please use Typescript and Node.js to the best of your ability.
-- Please use [Puppeteer](https://pptr.dev/) for Robot Process Automation
-- Please pay attention to the code structure, naming conventions and clear setup instructions
-- Try to structure your code so it can be unit tested. Bonus points if you also write a simple unit test for one of your components.
-- This exercise assumes synchronous behaviour (1. request to endpoint 2. submit candidate to Frontier form using Puppeteer 3. response to API user). In many cases, the execution time of the second could be quite long. Consequently, an asynchronous endpoint could be a better solution. For bonus points, describe how you would design/implement an asynchronous endpoint. (If you enjoy the exercise, feel free to implement the solution. :smiley:)
-
-
-When you send your solution back to us, please include your thoughts on the exercise and how long you spent on it so we can adjust our expectations.
-
-Good luck!
-
-– Frontier Engineering :)
-
-*ps -- We encourage you to treat the brief above like a product spec (and not a school test) where the customer requirements take precidence over the path you take to deliver them. So if you notice a more efficient path, or need to shave off some time to deliver your solution, just let us know in your response!*
+Submission of test for frontier junior backend role
+I could not use typescript as i was not familiar with it. Though, i have started learning it.
+I also had to learn puppeteer to be able to do this project and i must admit, it was quite intriguing. I am grateful for thqat experience.
+This is my own submission for the task given. It took me two days to familiarize myself with puppeteer and a day to write this project.
+This project opens up a browser and navigates to the job application page for frontier and auto-fills all the required value. I tried getting it to also submit automatically but i could not.
+My thought on the exercise? It was challenging and gave me the opportunity to learn new technologies. but then, requirements are not really explicit. some areas are vague.
